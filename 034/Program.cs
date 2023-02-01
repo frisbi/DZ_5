@@ -31,6 +31,8 @@ int GetEven(int[] array)
     return count;
 }
 
-int[] Array = CreateRandomArray(6, 100, 999);
+Console.Write("Введите колество элементов в массиве: ");
+int S = Convert.ToInt32(Console.ReadLine());
+int[] Array = CreateRandomArray(S, 100, 999);
 ShowArray(Array);
 Console.WriteLine($"Количество четных элементов в массиве = {GetEven(Array)}");
